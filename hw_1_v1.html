@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset="UTF-8">
+  <title>CS-6630 Homework 1</title>
+  <style>
+    .heading {
+      text-align : center;
+      height : 200px;
+    }
+    table, th, td {
+      border: 2px solid black;
+      border-collapse: collapse;
+      text-align: center;
+      width: 30px;
+      margin-left : 45%;
+    }
+    .allChartsDiv{
+      height : 200px;
+      width : 100%;
+    }
+    rect:hover{
+      fill: aliceblue;
+    }
+    .rectangle1 {
+      fill : palevioletred;
+      stroke-width:1px;
+      stroke: darkblue;
+    }
+    .rectangle2 {
+      fill : darkblue ;
+      stroke-width:1px;
+      stroke: palevioletred;
+    }
+    .linechart1{
+      stroke: firebrick;
+      stroke-width: 2px;
+      fill: none;
+      margin-left: 25%;
+    }
+    .linechart2{
+      stroke: lightseagreen;
+      stroke-width: 2px;
+    }
+    .areachart{
+      height : 300px;
+      width : 100%;
+      stroke: lightsteelblue;
+    }
+    .areachart1{
+      fill:red;
+    }
+    .areachart2{
+      fill: blue;
+    }
+    .scatterplot{
+      fill:red;
+    }
+    circle:hover{
+      fill:gray;
+    }
+    .frame_rectangle{
+      fill:none;
+      stroke: black;
+    }
+  </style>
+</head>
+<body>
+<div class = "heading">
+  <h1> CS-6630 Homework 1</h1>
+  <h2>Sushmitha S N<br/><a href="mailto:sushmitha.sn@utah.edu">sushmitha.sn@utah.edu</a><br/>u1265043</h2>
+</div>
+<div>
+  <table>
+    <caption><h2>Dataset</h2></caption>
+    <tr>
+      <th>x</th>
+      <th>y</th>
+    </tr>
+    <tr>
+      <td>10.0</td>
+      <td>8.04</td>
+    </tr>
+    <tr>
+      <td>8.0</td>
+      <td>6.95</td>
+    </tr>
+    <tr>
+      <td>13.0</td>
+      <td>7.58</td>
+    </tr>
+    <tr>
+      <td>9.0</td>
+      <td>8.81</td>
+    </tr>
+    <tr>
+      <td>11.0</td>
+      <td>8.33</td>
+    </tr>
+    <tr>
+      <td>14.0</td>
+      <td>9.96</td>
+    </tr>
+    <tr>
+      <td>6.0</td>
+      <td>7.24</td>
+    </tr>
+    <tr>
+      <td>4.0</td>
+      <td>4.26</td>
+    </tr>
+    <tr>
+      <td>12.0</td>
+      <td>10.84</td>
+    </tr>
+    <tr>
+      <td>7.0</td>
+      <td>4.82</td>
+    </tr>
+    <tr>
+      <td>5.0</td>
+      <td>5.68</td>
+    </tr>
+  </table>
+</div>
+
+<br>
+<br>
+
+<h2>Bar Charts</h2>
+<div class = "allChartsDiv">
+  <svg class = "allChartsDiv">
+    <g class = "rectangle1">
+      <rect x = "200" y ="15" height = "15" width = "300"/>
+      <rect x = "260" y = "30" height = "15" width = "240"/>
+      <rect x = "110" y = "45" height = "15" width = "390"/>
+      <rect x = "230" y = "60" height = "15" width = "270"/>
+      <rect x = "170" y = "75" height = "15" width = "330"/>
+      <rect x = "80" y = "90" height = "15" width = "420"/>
+      <rect x = "320" y = "105" height = "15" width = "180"/>
+      <rect x = "380" y = "120" height = "15" width = "120"/>
+      <rect x = "140" y = "135" height = "15" width = "360"/>
+      <rect x = "290" y = "150" height = "15" width = "210"/>
+      <rect x = "350" y = "165" height = "15" width = "150"/>
+    </g>
+    <g class = "rectangle2" transform="translate(500,0)">
+      <rect x = "00" y ="15" height = "15" width = "241.2"/>
+      <rect x = "00" y = "30" height = "15" width = "208.5"/>
+      <rect x = "00" y = "45" height = "15" width = "227.4"/>
+      <rect x = "00" y = "60" height = "15" width = "264.3"/>
+      <rect x = "00" y = "75" height = "15" width = "249.9"/>
+      <rect x = "00" y = "90" height = "15" width = "298.8"/>
+      <rect x = "00" y = "105" height = "15" width = "217.2"/>
+      <rect x = "00" y = "120" height = "15" width = "127.8"/>
+      <rect x = "00" y = "135" height = "15" width = "325.2"/>
+      <rect x = "00" y = "150" height = "15" width = "144.6"/>
+      <rect x = "00" y = "165" height = "15" width = "170.4"/>
+    </g>
+  </svg>
+</div>
+
+<h2>Line Charts</h2>
+<div class = "allChartsDiv">
+  <svg class = "allChartsDiv">
+    <g class = "linechart1">
+      <path transform = "translate(200,200),scale(1,-1)" d = "
+  M 0 100.0
+  L 20 80.0
+  L 40.0 130
+  L 60 90.0
+  L 80 110.0
+  L 100 140.0
+  L 120 60.0
+  L 140 40.0
+  L 160 120.0
+  L 180 70.0
+  L 200 50.0
+"/>
+    </g>
+    <g class = "linechart2">
+      <line x1 = "500" y1 = "119.6" x2="520" y2="130.5"/>
+      <line x1 = "520" y1 = "130.5" x2 = "540" y2="124.2"/>
+      <line x1 = "540" y1="124.2" x2 = "560" y2="111.9"/>
+      <line x1 = "560" y1="111.9" x2 = "580" y2="116.7"/>
+      <line x1 = "580" y1="116.7" x2 = "600" y2="100.4"/>
+      <line x1 = "600" y1 = "100.4" x2 = "620" y2 = "127.6"/>
+      <line x1 = "620" y1 = "127.6" x2 = "640" y2 = "157.4"/>
+      <line x1 = "640" y1 = "157.4" x2 = "660" y2 = "91.6"/>
+      <line x1 = "660" y1="91.6" x2 = "680" y2 = "151.8"/>
+      <line x1 = "680" y1 = "151.8" x2 = "700" y2 = "143.2"/>
+    </g>
+  </svg>
+</div>
+
+<br>
+<br>
+
+<h2>Area Charts</h2>
+<div class = "areachart">
+  <svg class = "areachart">
+    <g class = "areachart1">
+      <path transform = "translate(200,200),scale(1,-1) rotate(90)" d = "
+      M 0 0
+  L 0 100.0
+  L 20 80.0
+  L 40.0 130
+  L 60 90.0
+  L 80 110.0
+  L 100 140.0
+  L 120 60.0
+  L 140 40.0
+  L 160 120.0
+  L 180 70.0
+  L 200 50.0
+  L 200 0
+"/>
+    </g>
+    <g class = "areachart2">
+      <path  transform = "translate(200,-200),scale(1,-1) rotate(-90)" d = "
+      M 200 0
+      L 200 80.4
+      L 220 69.5
+      L 240 75.8
+      L 260 88.1
+      L 280 83.3
+      L 300 99.6
+      L 320 72.4
+      L 340 42.6
+      L 360 108.4
+      L 380 48.2
+      L 400 56.8
+      L 400 0
+      "/>
+    </g>
+  </svg>
+</div>
+<h2>Scatterplot</h2>
+<div class = "allChartsDiv">
+  <svg class = "allChartsDiv">
+    <g class = "scatterplot" transform = "translate(0,200), scale(2,-1)">
+      <rect class ="frame_rectangle" height = "200px" width = "200px"></rect>
+      <circle cx="100" cy="80.4" r="4"><title> 10, 8.04</title>/></circle>
+      <circle cx="80" cy="69.5" r="4"><title>8, 6.95</title></circle>
+      <circle cx="130" cy="75.8" r="4"><title>13, 7.58</title></circle>
+      <circle cx="90" cy="88.1" r="4"><title>9, 8.81</title></circle>
+      <circle cx="110" cy="83.3" r="4"><title>11,8.33</title></circle>
+      <circle cx="140" cy="99.6" r="4"><title>14, 9.96</title></circle>
+      <circle cx="60" cy="72.4" r="4"><title>6, 7.24</title></circle>
+      <circle cx="40" cy="42.6" r="4"><title>4, 4.26</title></circle>
+      <circle cx="120" cy="108.4" r="4"><title>12, 10.84</title></circle>
+      <circle cx="70" cy="48.2" r="4"><title>7, 4.83</title></circle>
+      <circle cx="50" cy="56.8" r="4"><title>5, 5.68</title></circle>
+      <line class = "linechart2" x1 = "20" y1 = "40" x2 = "160" y2 = "110"/>
+    </g>
+  </svg>
+</div>
+</body>
+</html>
