@@ -1,0 +1,151 @@
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 13px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 13px;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    height: 19px;
+    width: 19px;
+    left: 4px;
+    position: absolute;
+    content: "";
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+input:checked + .slider {
+    background-color: skyblue;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px skyblue;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+#extremeBtn{
+    margin-left: 70px;
+    position: relative;
+    border-color: deepskyblue;
+    width: 200px;
+    height:50px;
+}
+
+#tooltip {
+    background: cornsilk;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+#toggleSwitch.active{
+    background: skyblue;
+}
+thead td , th{
+    cursor: s-resize;
+}
+
+div.tooltip-donut {
+    position: absolute;
+    text-align: center;
+    padding: .5rem;
+    background: rgba(255, 255, 255, 0.85);
+    color: #313639;
+    border: 1px solid #313639;
+    border-radius: 8px;
+    pointer-events: none;
+    font-size: 1.3rem;
+}
+span{
+    text-align: right;
+}
+thead{
+    background-color: lightcyan;
+}
+tbody tr:first-child td {
+    padding-top: 5px;
+}
+tbody th{
+    cursor:pointer;
+    font-weight: bold;
+}
+tbody td {
+    padding-right: 5px;
+    padding-left: 5px;
+    /*border-left: solid 1px #000;*/
+    color:black
+}
+#details{
+    margin-right: 20px;
+    float:right;
+}
+toggle-button.active>.inner-circle{
+    display:none;
+    margin-left: 100px;
+    transition:all 300ms ease-in-out;
+}
+.show-extremes{
+    left:250px;
+    position: absolute;
+}
+/*.x axis{*/
+/*    stroke:0px;*/
+/*}*/
+
+#dataTable{
+    /*background:lightpink;*/
+    position:absolute;
+    left:1101px;
+    top:15%;
+}
+#bubbleChart{
+    /*backGround:grey;*/
+    top:15%;
+    position:absolute; left:0%;
+    width:1000px;
+}
+circle{
+    stroke-width:1px;
+    stroke:black;
+}
+text{
+    font-weight: bold;
+}
+tipDiv.tooltip{
+    width: 60px;
+    height: 28px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+}
